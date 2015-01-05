@@ -1,0 +1,73 @@
+
+// @return
+@function social-color($source) {
+	@if $source == 'soundcloud' {
+		@return #f80;
+	}
+	@else if $source == 'spotify' {
+		@return #7ab800;
+	}
+	@else if $source == 'instagram' {
+		@return #3f729b;
+	}
+	@else if $source == 'twitter' {
+		@return #55acee;
+	}
+	@else if $source == 'github' {
+		@return #4183c4;
+	}
+	@else if $source == 'stackoverflow' {
+		@return #fe7a15;
+	}
+	@else if $source == 'facebook' {
+		@return #3b5998;
+	}
+	@else if $source == 'google+' {
+		@return #dd4b39;
+	}
+	@else if $source == 'tumblr' {
+		@return #35465c;
+	}
+	@else if $source == 'dribble' {
+		@return #ea4c89;
+	}
+	@else if $source == 'linkedin' {
+		@return #0976b4;
+	}
+	@else if $source == 'behance' {
+		@return #1769ff;
+	}
+	@else {
+		@return maroon;
+	}
+}
+
+.social {
+	// @include transition(all 0.2s);
+	text-decoration: none;
+}
+
+.twitter:hover {
+	color: social-color('twitter');
+}
+.github:hover {
+	color: social-color('github');
+}
+.facebook:hover {
+	color: social-color('facebook');
+}
+.instagram:hover {
+	color: social-color('instagram');
+}
+.linkedin:hover {
+	color: social-color('linkedin');
+}
+.email:hover {
+	color: social-color('email');
+}
+.spotify:hover {
+	color: social-color('spotify');
+}
+.soundcloud:hover {
+	color: social-color('soundcloud');
+}

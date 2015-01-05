@@ -1,0 +1,226 @@
+.centered {
+	margin: 0;
+	@include span-columns(10);
+	@include shift(1);
+	text-align: center;
+}
+
+.name {
+	padding: 5px 0 0px 0;
+	font-weight: 500;
+	font-size: 24pt;	
+
+	.l {
+		text-decoration: none;
+		color: $black;
+		&:hover {
+			color: #3f729b;
+		}
+	}
+}
+
+
+hr {
+	border: 0;
+	background-color: $black;
+	height: 1px;
+}
+
+.socials {
+	padding: 5px 0 5px 0;
+}
+
+.social {
+	padding: 0px 3px 0px 3px;
+	font-size: 14pt;
+	color: $black;
+}
+
+.tag {
+	padding: 5px 0 5px 0;
+	font-weight: 300;
+	font-size: 14pt;
+	color: $grey;
+
+	@include transition(all 0.5s);
+	
+	@include media($little-screen) {
+		font-size: 12pt;
+	}
+	@include media($mobile) {
+		font-size: 10pt;
+	}
+}
+
+.links {
+	@include span-columns(8 of 10);
+	@include shift(1);
+}
+
+.link {
+	@include span-columns(2 of 8);
+	text-align: center;
+	float: left;
+	color: $grey;
+	text-decoration: none;
+	font-size: 12pt;
+
+	&:hover {
+		color: $black;
+		// font-weight: 500;
+	}
+
+	@include media($mobile) {
+		@include span-columns(8 of 8);
+	}
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	background-color: white;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+hr {
+	margin-top: 5px;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+}
+
+.home-img {
+	background: url("images/MilkyWay.jpg") no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.con {
+	margin-top: 100px;
+}
+
+.content {
+	@include span-columns(10);
+	@include shift(1);
+
+	@include media($mobile) {
+		@include span-columns(11);
+		@include shift(0.5);
+	}
+}
+
+.contact {
+	clear: both;
+	display: block;
+	position: relative;
+}
+
+.contact-d {
+	display: none;
+}
+
+.contact-title {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 32pt;
+}
+
+
+.contact-form {
+	width: 100%;
+	border: none;
+	font-size: 48pt;
+	font-weight: 200;
+	color: $grey;
+	font-family: Futura Std;
+	border-bottom-style: solid;
+	border-bottom-width: 0px; 
+	border-bottom-color: $grey;
+	resize: none;
+	margin-top: 0;
+
+	@include transition(all 0.3s ease-in-out);
+
+	&:focus {
+		outline: none;
+		color: $black;
+	}
+}
+
+textarea.contact-form {
+	height: 250px;
+}
+
+.next {
+	clear: both;
+	display: block;
+	margin-top: 15px;
+}
+
+.nextbutton {
+	color: $black;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	font-size: 24pt;
+
+	&:hover {
+		color: social-color('twitter');
+	}
+}
+
+.tweet-house {
+
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: 10%;
+}
+
+.tweet-tag {
+	font-size: 16pt;
+	color: white;
+	float: right;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		@include transition(all 0.2s);
+
+		&:hover {
+			color: social-color('twitter');
+		}
+	}
+}
+
+.tweet {
+	font-family: Baskerfield;
+	font-style: italic;
+	font-size: 32pt;
+	margin: 0;
+	margin-bottom: 20px;
+
+	@include transition(all 0.2s);
+
+	@include media($little-screen) {
+		font-size: 24pt;
+	}
+
+	@include media($mobile) {
+		font-size: 16pt;
+	}
+
+	color: white;
+	text-align: center;
+}

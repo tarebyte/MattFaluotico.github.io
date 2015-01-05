@@ -1,0 +1,23 @@
+.name-an {
+	@include animation(fade-in 1s ease-in);
+}
+
+@for $i from 1 through 8 {
+	.social-an-#{$i} {
+		opacity: 0;
+		@include animation-name(fade-in);
+		@include animation-duration(1s);
+		@include animation-delay(0s + $i/8);
+		@include animation-fill-mode(forwards);
+	}
+}
+
+@include keyframes(fade-in) {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
