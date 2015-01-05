@@ -212,6 +212,12 @@ body {
     outline: none;
     color: black; }
 
+.provided {
+  padding-top: 15px;
+  height: 50px; }
+  .provided span {
+    padding-right: 30px; }
+
 textarea.contact-form {
   height: 250px; }
 
@@ -271,10 +277,97 @@ textarea.contact-form {
       font-size: 16pt; } }
 
 .name-an {
-  -webkit-animation: fade-in 1s ease-in;
-  -moz-animation: fade-in 1s ease-in;
-  animation: fade-in 1s ease-in; }
+  -webkit-animation: fade-in 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -moz-animation: fade-in 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation: fade-in 1s cubic-bezier(0.47, 0, 0.745, 0.715); }
 
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s ease-in;
+  -moz-animation: slide-in-right 0.5s ease-in;
+  animation: slide-in-right 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.slide-in {
+  -webkit-animation: slide-in 0.5s ease-in;
+  -moz-animation: slide-in 0.5s ease-in;
+  animation: slide-in 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.slide-out {
+  -webkit-animation: slide-out 0.5s ease-in;
+  -moz-animation: slide-out 0.5s ease-in;
+  animation: slide-out 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@-moz-keyframes slide-in {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@-webkit-keyframes slide-in-right {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@-moz-keyframes slide-in-right {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    left: 45px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@-webkit-keyframes slide-out {
+  from {
+    left: 0px; }
+  to {
+    left: -100px;
+    opacity: 0;
+    display: none; } }
+@-moz-keyframes slide-out {
+  from {
+    left: 0px; }
+  to {
+    left: -100px;
+    opacity: 0;
+    display: none; } }
+@keyframes slide-out {
+  from {
+    left: 0px; }
+  to {
+    left: -100px;
+    opacity: 0;
+    display: none; } }
 .social-an-1 {
   opacity: 0;
   -webkit-animation-name: fade-in;
